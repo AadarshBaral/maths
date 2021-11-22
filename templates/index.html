@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rank Correlation Calculator</title>
+</head>
+<style>
+.result {
+background-color: rgb(178, 243, 152);
+display : inline-block;
+border : rgb(0, 165, 0);
+border-radius: 10px;
+padding : 20px;
+font-size: 30px;
+margin-top : 30px;
+}
+</style>
+<body>
+
+    <div class="form container">
+        <div class="jumbotron">
+            <h1 class="display-5">Rank Correlation Calculator</h1>
+            <p style = "font-size: 20px;">Calculate typical Rank Correlatoin problems</p>
+
+            <p style = "font-size: 20px; color : rgb(173, 0, 0)">Enter Comma Separated Values</p>
+            <hr class="my-4">   
+    <form action = "/" method = "POST">
+        <!-- X -->
+        <div class="form-outline mb-4">
+            <label class="form-label" name = "list2" for="form5Example1">Values for X</label>
+            <input type="text" id="form5Example1" name = "list1" class="form-control" />
+          </div>
+      
+        <!-- Y -->
+        <div class="form-outline mb-4">
+            <label class="form-label"  for="form5Example1">Values for Y</label>
+            <input type="text" id="form5Example1" name = "list2" class="form-control" />
+          </div>
+      
+        <!-- 2 column grid layout for inline styling -->
+      
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block">Calculate</button>
+      </form>
+    </div>
+   <p class="result">Rank Correlation : {{r}}</p>
+</div>
+</div>
+<div class="card">
+
+    <div class="card-body">
+      <h6 class="card-title">Made By Aadarsh Baral</h6>
+      <p class="card-text">Class of Prabhash Parajuli 2022</p>
+      <a href="#" class="btn btn-primary">See Code</a>
+    </div>
+  </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
