@@ -9,6 +9,7 @@ def home():
     x = []
     y = []
     r = 0
+    
     if request.method == "POST":
         val1 = request.form['list1']
         val2 = request.form['list2']
